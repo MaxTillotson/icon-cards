@@ -5,15 +5,46 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
-  font-family: "Abhaya Libre", serif;
-
   box-sizing: border-box;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  font-family: sans-serif;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+p {
+  color: #333;
+}
+
+.card {
+  border: 3px solid;
+  border-color: #000;
+  border-radius: .5em;
+  background-color: #fff;
+}
+
+.card:hover {
+  background-color: #e6e6e6;
+}
+
+.card:hover .btn {
+  color: #fff;
+  background-color: #333;
+}
+
+@media only screen and (min-width: 35em) {
+
+  a {
+    width: 95%;
+  }
 }
